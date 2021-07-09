@@ -1,0 +1,349 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - faq
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_faq/ask_name:
+  - image: "https://i.imgur.com/zTvA58i.jpeg"
+    text: Hello, my name is Retrieval Bot.
+  - text: I am called Retrieval Bot!
+  utter_faq/ask_weather:
+  - text: Oh, it does look sunny right now in Berlin.
+    image: "https://i.imgur.com/vwv7aHN.png"
+  - text: I am not sure of the whole week but I can see the sun is out today.
+
+  utter_faq/corona_intro:
+  - text: Corona viruses are a large family of viruses which may cause illness
+      in animals or humans. In humans, several coronaviruses are known
+      to cause respiratory infections ranging from the common cold to more
+      severe diseases such as Middle East Respiratory Syndrome (MERS)
+      and Severe Acute Respiratory Syndrome (SARS). The most recently
+      discovered coronavirus causes coronavirus disease COVID-19.
+  utter_faq/corona_spread:
+  - text: People can catch COVID-19 from others who have the virus. The
+      disease can spread from person to person through small droplets from
+      the nose or mouth which are spread when a person with COVID-19
+      coughs or exhales. These droplets land on objects and surfaces
+      around the person. Other people then catch COVID-19 by touching
+      these objects or surfaces, then touching their eyes, nose or mouth.
+      People can also catch COVID-19 if they breathe in droplets from a
+      person with COVID-19 who coughs out or exhales droplets. This is
+      why it is important to stay more than 1 meter (3 feet) away from a
+      person who is sick.
+  utter_faq/corona_food_spread:
+  - text: Coronaviruses are generally thought to be spread from person-to-person through
+      respiratory droplets. Currently there is no evidence to support transmission
+      of COVID-19 associated with food. Before preparing or eating food it is important
+      to always wash your hands with soap and water for 20 seconds for general food
+      safety. Throughout the day wash your hands after blowing your nose, coughing
+      or sneezing, or going to the bathroom.
+  utter_faq/warm_weather:
+  - text: It is not yet known whether weather and temperature impact the spread of
+      COVID-19. Some other viruses, like the common cold and flu, spread more during
+      cold weather months but that does not mean it is impossible to become sick with
+      these viruses during other months.  At this time, it is not known whether the
+      spread of COVID-19 will decrease when weather becomes warmer.  There is much
+      more to learn about the transmissibility, severity, and other features associated
+      with COVID-19 and investigations are ongoing.
+  utter_faq/high_risk:
+  - text: Elderly people above 70 years of age and those with underlying health conditions
+      (e.g. hypertension, diabetes, cardiovascular disease, chronic respiratory disease and cancer)
+      are considered to be more at risk of developing severe symptoms.
+      Men in these groups also appear to be at a slightly higher risk than females..
+  utter_faq/corona_come_from:
+  - text: corona viruses are viruses that circulate among animals with some of them
+      also known to infect humans. Bats are considered natural hosts of these viruses
+      yet several other species of animals are also known to act as sources.
+      For instance, Middle East Respiratory Syndrome corona virus (MERS-CoV) is transmitted
+      to humans from camels, and Severe Acute Respiratory Syndrome corona virus-1 (SARS-CoV-1)
+      is transmitted to humans from civet cats.
+      More information on corona viruses can be found in the ECDC factsheet.
+  utter_faq/corona_vs_sar_flu:
+  - text: The novel corona virus detected in China in 2019 is closely related
+      genetically to the SARS-CoV-1 virus. SARS emerged at the end of 2002 in China,
+      and it caused more than 8 000 cases in 33 countries over a period of eight months.
+      Around one in ten of the people who developed SARS died. As of 30 March 2020,
+      the COVID-19 outbreak had caused over 700 000 cases worldwide since the first case
+      was reported in China in January 2020. Of these, more than 30 000 are known to have died.
+      While the viruses that cause both COVID-19 and seasonal influenza are transmitted from
+      person-to-person and may cause similar symptoms, the two viruses are very different
+      and do not behave in the same way.
+  utter_faq/mode_of_transmission:
+  - text: While animals are believed to be the original source, the virus spread is now
+        from person to person (human-to-human transmission).There is not enough epidemiological
+        information at this time to determine how easily this virus spreads between people,
+        but it is currently estimated that, on average, one infected person will infect between
+        two and three other people.The virus seems to be transmitted mainly via small respiratory
+        droplets through sneezing, coughing, or when people interact with each other for some time
+        in close proximity (usually less than one metre). These droplets can then be inhaled,
+        or they can land on surfaces that others may come into contact with, who can then get infected
+        when they touch their nose, mouth or eyes.
+        The virus can survive on different surfaces from several hours (copper, cardboard)
+        up to a few days (plastic and stainless steel). However, the amount of viable virus declines
+        over time and may not always be present in sufficient numbers to cause infection.
+        The incubation period for COVID-19 (i.e. the time between exposure to the virus and onset of symptoms)
+        is currently estimated to bet between one and 14 days. We know that the virus can be transmitted
+        when people who are infected show symptoms such as coughing. There is also some evidence suggesting
+        that transmission can occur from a person that is infected even two days before showing symptoms;
+        however, uncertainties remain about the effect of transmission by  non-symptomatic persons.
+  utter_faq/person_infectious:
+  - text: The infectious period may begin one to two days before symptoms appear,
+        but people are likely most infectious during the symptomatic period, even if symptoms are mild and very non-specific.
+        The infectious period is now estimated to last for 7-12 days in moderate cases and up to two weeks on average in severe cases.
+
+  utter_faq/severity:
+  - text: Preliminary data from the EU/EEA (from the countries with available data) show that around 20-30% of diagnosed COVID-19 cases are hospitalised
+        and 4% have severe illness. Hospitalisation rates are higher for those aged 60 years and above, and for those with other underlying health conditions.
+
+  utter_faq/child_risk:
+  - text: Children make up a very small proportion of reported COVID-19 cases,
+        with about 1% of all cases reported being under 10 years, and 4% aged 10-19 years.
+        Children appear as likely to be infected as adults, but they have a much lower risk
+        than adults of developing symptoms or severe disease.
+        There is still some uncertainty about the extent to which asymptomatic or mildly symptomatic children transmit disease.
+
+  utter_faq/pregnant_risk:
+  - text: There is limited scientific evidence on the severity of illness in pregnant women after COVID-19 infection.
+        It seems that pregnant women appear to experience similar clinical manifestations as non-pregnant women who
+        have progressed to COVID-19 pneumonia and to date (as of 25 March), there have been no maternal deaths,
+        no pregnancy losses and only one stillbirth reported. No current evidence suggests that infection with COVID-19
+        during pregnancy has a negative effect on the foetus. At present, there is no evidence of transmission of COVID-19
+        from mother to baby during pregnancy and only one confirmed COVID-19 neonatal case has been reported to date.
+        ECDC will continue to monitor the emerging scientific literature on this question, and suggests that all pregnant women
+        follow the same general precautions for the prevention of COVID-19, including regular handwashing, avoiding individuals
+        who are sick, and self-isolating in case of any symptoms, while consulting a healthcare provider by telephone for advice.
+
+  utter_faq/when_test:
+  - text: Current advice for testing depends on the stage of the outbreak in the country or area where you live.
+        Testing approaches will be adapted to the situation at national and local level.
+        National authorities may decide to test only subgroups of suspected cases based on the national capacity to test,
+        the availability of necessary equipment for testing, the level of community transmission of COVID-19, or other criteria.
+        As a resource conscious approach, ECDC has suggested that national authorities may consider prioritising testing in the following groups,
+        hospitalised patients with severe respiratory infections; symptomatic healthcare staff including those with mild symptoms;
+        cases with acute respiratory infections in hospital or long-term care facilities;
+        patients with acute respiratory infections or influenza-like illness in certain outpatient clinics or hospitals;
+        elderly people with underlying chronic medical conditions such as lung disease, cancer, heart failure,
+        cerebrovascular disease, renal disease, liver disease, diabetes, and immunocompromising conditions.
+
+  utter_faq/where_test:
+  - text: If you are feeling ill with COVID-19 symptoms (such as fever, cough, difficulty breathing, muscle pain or general weakness),
+        it is recommended that you contact your local healthcare services online or by telephone. If your healthcare provider believes
+        there is a need for a laboratory test for the virus that causes COVID-19, he/she will inform you of the procedureto follow
+        and advise where and how the test can be performed.
+
+  utter_faq/other_allergy:
+  - text: A large proportion of the population (up to 15-20%) reports seasonal symptoms related to pollen,
+        the most common of which include itchy eyes, nasal congestion, runny nose and sometimes wheezing and skin rash.
+        All these symptoms are usually referred to as hay fever, pollen allergy or more appropriately allergic rhinitis.
+        Allergic rhinitis is commonly associated with allergic asthma in children and adults. Allergies, including mild allergic asthma,
+        have not been identified as a major risk factor for SARS-CoV-2 infection or for a more unfavourable outcome in the studies available so far.
+        Moderate to severe asthma on the other hand, where patients need treatment daily,
+        is included in the chronic lung conditions that predispose to severe disease.
+        Children and adults on maintenance medication for allergies (e.g. leukotriene inhibitors, inhaled corticosteroids and/or bronchodilators)
+        need to continue their treatment as prescribed by their doctor and should not discontinue their medication due to fears of COVID-19.
+        If they develop symptoms compatible with COVID-19, they will need to self-isolate, inform their doctor and monitor their health as everyone else.
+        If progressive difficulty breathing develops, they should seek prompt medical assistance.
+
+  utter_faq/other_allergy_vs_covid:
+  - text: Someone with COVID-19 usually has mild, flu-like symptoms (see above question 1),
+        which are rather common and need to be distinguished from similar symptoms caused by common cold viruses and
+        from allergic symptoms during springtime. The following table presents a comparison of the most common symptoms
+        of all three conditions according to their reported frequency. It is good to bear in mind that the definitive diagnosis of COVID-19
+        is not clinical, but through laboratory testing of a sample from the nose or mouth.
+
+  utter_faq/allergy_treatment:
+  - text: No, there is no more reason for people suffering from pollen allergy to self-isolate if they develop their typical
+        hay-fever symptoms than for anyone else. They should continue following the general guidance for physical distancing
+        and seek medical advice if their symptoms get worse, if they develop fever or progressive difficulty breathing.
+
+  utter_faq/avoid_infection:
+  - text: The virus enters your body via your eyes, nose and/or mouth, so it is important to avoid touching your face
+        with unwashed hands. Washing of hands with soap and water for at least 20 seconds, or cleaning hands thoroughly
+        with alcohol-based solutions, gels or tissues is recommended in all settings.
+        It is also recommended to stay one metre or more away from people infected with COVID-19 who are showing symptoms,
+        to reduce the risk of infection through respiratory droplets.
+
+  utter_faq/symptoms:
+  - text: The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal
+        congestion, runny nose, sore throat or diarrhea. These symptoms are
+        usually mild and begin gradually. Some people become infected but
+        don’t develop any symptoms and don't feel unwell. Most people
+        (about 80%) recover from the disease without needing special
+        treatment. Around 1 out of every 6 people who gets COVID-19
+        becomes seriously ill and develops difficulty breathing. Older people,
+        and those with underlying medical problems like high blood pressure,
+        heart problems or diabetes, are more likely to develop serious illness.
+        People with fever, cough and difficulty breathing should seek medical attention.
+
+  utter_faq/virus_transmission:
+  - text: Studies to date suggest that the virus that causes COVID-19 is mainly transmitted through contact
+        with respiratory droplets rather than through the air. See previous answer on “How does COVID-19 spread?"
+
+  utter_faq/caught_from_non_symptom:
+  - text: The virus enters your body via your eyes, nose and/or mouth, so it is important to avoid touching your face
+        with unwashed hands. Washing of hands with soap and water for at least 20 seconds, or cleaning hands thoroughly
+        with alcohol-based solutions, gels or tissues is recommended in all settings.
+        It is also recommended to stay one metre or more away from people infected with COVID-19 who are showing symptoms,
+        to reduce the risk of infection through respiratory droplets.
+
+  utter_faq/caught_from_feces:
+  - text: The risk of catching COVID-19 from the feces of an infected person appears to be low.
+        While initial investigations suggest the virus may be present in feces in some cases, spread through this route
+        is not a main feature of the outbreak. The ongoing research on the ways COVID-19 is spread and will continue to share new findings.
+        Because this is a risk, however, it is another reason to clean hands regularly, after using the bathroom and before eating.
+
+  utter_faq/protection_covid:
+  - text: Stay aware of the latest information on the COVID-19 outbreak,available on the national,state and local public health authority.
+        Many countries around the world have seen cases of COVID-19 and several have seen outbreaks. Authorities in China and some other countries
+        have succeeded in slowing or stopping their outbreaks. However, the situation is unpredictable so check regularly for the latest news.
+        You can reduce your chances of being infected or spreading COVID19 by taking some simple precautions
+        • Regularly and thoroughly clean your hands with an alcoholbased hand rub or wash them with soap and water.
+          Why? Washing your hands with soap and water or using alcohol-based hand rub kills viruses that may be on your hands.
+        • Maintain at least 1 metre (3 feet) distance between yourself and anyone who is coughing or sneezing.
+          Why? When someone coughs or sneezes they spray small liquid droplets from their nose or mouth which may contain virus. If you
+          are too close, you can breathe in the droplets, including the COVID-19 virus if the person coughing has the disease.
+        • Avoid touching eyes, nose and mouth.
+          Why? Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes,
+          nose or mouth. From there, the virus can enter your body and can make you sick.
+        • Make sure you, and the people around you, follow good respiratory hygiene. This means covering your mouth and nose
+        with your bent elbow or tissue when you cough or sneeze. Then dispose of the used tissue immediately.
+        Why? Droplets spread virus. By following good respiratory hygiene you protect the people around you from viruses such as
+        cold, flu and COVID-19.
+        • Stay home if you feel unwell. If you have a fever, cough and difficulty breathing, seek medical attention and call in advance.
+        Follow the directions of your local health authority. Why? National and local authorities will have the most up to date
+        information on the situation in your area. Calling in advance will allow your health care provider to quickly direct you to the right
+        health facility. This will also protect you and help prevent spread of viruses and other infections.
+        • Keep up to date on the latest COVID-19 hotspots (cities or local areas where COVID-19 is spreading widely). If possible, avoid
+        traveling to places – especially if you are an older person or have diabetes, heart or lung disease.
+        Why? You have a higher chance of catching COVID-19 in one of these areas.
+
+
+  utter_faq/get_catch_covid:
+  - text: The risk depends on where you are - and more specifically, whether there is a COVID-19 outbreak unfolding there.
+        For most people in most locations the risk of catching COVID-19 is still low. However, there are now places around the world (cities or
+        areas) where the disease is spreading. For people living in, or visiting, these areas the risk of catching COVID-19 is higher. Governments
+        and health authorities are taking vigorous action every time a new case of COVID-19 is identified. Be sure to comply with any local
+        restrictions on travel, movement or large gatherings. Cooperating with disease control efforts will reduce your risk of catching or spreading COVID-19.
+        COVID-19 outbreaks can be contained and transmission stopped, as has been shown in China and some other countries. Unfortunately,
+        new outbreaks can emerge rapidly. It’s important to be aware of the situation where you are or intend to go.
+
+  utter_faq/worry_covid:
+  - text: Illness due to COVID-19 infection is generally mild, especially for children and young adults. However, it can cause serious illness
+        about 1 in every 5 people who catch it need hospital care. It is therefore quite normal for people to worry about how the COVID-19
+        outbreak will affect them and their loved ones. We can channel our concerns into actions to protect ourselves, our
+        loved ones and our communities. First and foremost among these actions is regular and thorough hand-washing and good respiratory
+        hygiene. Secondly, keep informed and follow the advice of the local health authorities including any restrictions put in place on travel,
+        movement and gatherings.
+
+  utter_faq/risk_of_severe:
+  - text: While we are still learning about how COVID-2019 affects people,older persons and persons with pre-existing medical conditions (such
+        as high blood pressure, heart disease, lung disease, cancer or diabetes) appear to develop serious illness more often than others.
+
+
+  utter_faq/antibiotic_helpful:
+  - text: NO. Antibiotics do not work against viruses, they only work on bacterial infections. COVID-19 is caused by a virus, so antibiotics do
+        not work. Antibiotics should not be used as a means of prevention or treatment of COVID-19. They should only be used as directed
+        by a physician to treat a bacterial infection.
+
+
+  utter_faq/medicine_helpful:
+  - text: While some western, traditional or home remedies may provide comfort and alleviate symptoms of COVID-19, there is no evidence
+        that current medicine can prevent or cure the disease. We does not recommend self-medication with any medicines, including antibiotics,
+        as a prevention or cure for COVID-19. However, there are several ongoing clinical trials that include both western and traditional
+        medicines. We will continue to provide updated information as soon as clinical findings are available.
+
+  utter_faq/vaccine_covid:
+  - text: Presently, Covishield and Covaxin are the two types of vaccine available in India.
+        You will get one of these two vaccines but can not choose the vaccine that you would like to take.
+        Which vaccine will be given to you, will be decided by the vaccine provider according to allocation.
+        The most effective ways to protect yourself and others against COVID-19 are to frequently clean your hands, cover your cough with
+        the bend of elbow or tissue, and maintain a distance of at least 1 meter (3 feet) from people who are coughing or sneezing.
+
+  utter_faq/covid_vs_sar:
+  - text: No. The virus that causes COVID-19 and the one that caused the outbreak of Severe Acute Respiratory Syndrome (SARS) in 2003 are
+        related to each other genetically, but the diseases they cause are quite different.
+        SARS was more deadly but much less infectious than COVID-19.
+        There have been no outbreaks of SARS anywhere in the world since 2003.
+
+  utter_faq/mask_protect:
+  - text: Only wear a mask if you are ill with COVID-19 symptoms (especially coughing) or looking after someone who may have COVID-19.
+        Disposable face mask can only be used once. If you are not ill or looking after someone who is ill then you are wasting a mask. There is
+        a world-wide shortage of masks, so We urge people to use masks wisely.
+        We advises rational use of medical masks to avoid unnecessary wastage of precious resources and mis-use of masks The most
+        effective ways to protect yourself and others against COVID-19 are to frequently clean your hands, cover your cough with the bend of elbow
+        or tissue and maintain a distance of at least 1 meter (3 feet) from people who are coughing or sneezing.
+
+  utter_faq/handle_mask:
+  - text: Remember, a mask should only be used by health workers, care takers, and individuals with respiratory symptoms, such as fever and cough.
+        2. Before touching the mask, clean hands with an alcohol-based hand rub or soap and water
+        3. Take the mask and inspect it for tears or holes.
+        4. Orient which side is the top side (where the metal strip is).
+        5. Ensure the proper side of the mask faces outwards (the coloured side).
+        6. Place the mask to your face. Pinch the metal strip or stiff edge of the mask so it moulds to the shape of your nose.
+        7. Pull down the mask’s bottom so it covers your mouth and your chin.
+        8. After use, take off the mask; remove the elastic loops from behind the ears while keeping the mask away from your face and clothes,
+           to avoid touching potentially contaminated surfaces of the mask.
+        9. Discard the mask in a closed bin immediately after use.
+        10. Perform hand hygiene after touching or discarding the mask – Use alcohol-based hand rub or, if visibly soiled, wash
+            your hands with soap and water.
+
+  utter_faq/infection_from_animal:
+  - text: Coronaviruses are a large family of viruses that are common in animals. Occasionally, people get infected with these viruses which
+        may then spread to other people. For example, SARS-CoV was associated with civet cats and MERS-CoV is transmitted by
+        dromedary camels. Possible animal sources of COVID-19 have not yet been confirmed.
+        To protect yourself, such as when visiting live animal markets, avoid direct contact with animals and surfaces in contact with animals.
+        Ensure good food safety practices at all times. Handle raw meat, milk or animal organs with care to avoid contamination of uncooked foods
+        and avoid consuming raw or undercooked animal products.
+
+  utter_faq/infection_from_pet:
+  - text: While there has been one instance of a dog being infected in Hong Kong, to date, there is no evidence that a dog, cat or any pet can
+        transmit COVID-19. COVID-19 is mainly spread through droplets produced when an infected person coughs, sneezes, or speaks.
+        To protect yourself, clean your hands frequently and thoroughly.
+        We continues to monitor the latest research on this and other COVID19 topics and will update as new findings are available.
+
+  utter_faq/survive_on_surface:
+  - text: It is not certain how long the virus that causes COVID-19 survives on surfaces, but it seems to behave like other corona viruses. Studies
+        suggest that corona viruses (including preliminary information on the COVID-19 virus) may persist on surfaces for a few hours or up to
+        several days. This may vary under different conditions (e.g. type of surface, temperature or humidity of the environment).
+        If you think a surface may be infected, clean it with simple disinfectant to kill the virus and protect yourself and others. Clean your hands with
+        an alcohol-based hand rub or wash them with soap and water. Avoid touching your eyes, mouth, or nose.
+
+  utter_faq/package:
+  - text: Yes. The likelihood of an infected person contaminating commercial goods is low and the risk of catching the virus that causes COVID-19
+        from a package that has been moved, travelled, and exposed to different conditions and temperature is also low.
+
+  utter_faq/incubation_period:
+  - text: The “incubation period” means the time between catching the virus and beginning to have symptoms of the disease.
+        Most estimates of the incubation period for COVID-19 range from 1-14 days, most commonly around five days.
+        These estimates will be updated as more data become available.
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

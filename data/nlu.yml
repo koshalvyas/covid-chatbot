@@ -1,0 +1,357 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: faq/corona_intro
+  examples: |
+    - What is corona virus
+    - what is covid
+    - what is a novel corona virus
+    - what is covid-19
+    - tell me about corona
+    - can you tell me about covid
+
+- intent: faq/corona_spread
+  examples: |
+    - how does corona virus spread
+    - how does the virus spread
+
+- intent: faq/corona_food_spread
+  examples: |
+    - Does corona spread from food
+    - how will corona spread from food
+
+- intent: faq/warm_weather
+  examples: |
+    - will warm weather stop the spread
+    - will it stop with warm weather
+
+- intent: faq/high_risk
+  examples: |
+    - who is at a higher risk of infection
+    - Are some people more at risk than others
+
+- intent: faq/corona_come_from
+  examples: |
+    - Where do corona viruses come from
+    - will it stop with warm weather
+
+- intent: faq/corona_vs_sar_flu
+  examples: |
+    - Is this virus comparable to SARS or to the seasonal flu
+    - Is this virus comparable to SARS
+    - Is this virus comparable to the seasonal flu
+    - Is this virus vs SARS vs flu
+    - corona virus vs SARS vs flu
+
+
+- intent: faq/mode_of_transmission
+  examples: |
+    - What is the mode of transmission of corona virus
+    - What is the way of transmission of corona virus
+    - way of transmission of corona virus
+    - mode of transmission of corona virus
+
+- intent: faq/person_infectious
+  examples: |
+    - When is a person infectious?
+    - What is symptom of corona virus
+    - What is symptom of person infected
+
+- intent: faq/severity
+  examples: |
+    - How severe is COVID-19 infection
+    - what is severeity of COVID-19 infection
+    - severe of COVID infection
+
+
+- intent: faq/child_risk
+  examples: |
+    - Are children also at risk of infection and what is their potential role in transmission of covid19
+    - Are children also at risk of infection
+    - what is their potential role in transmission of covid19
+
+- intent: faq/pregnant_risk
+  examples: |
+    - What is the risk of infection in pregnant women and neonates
+    - What is the risk of infection in pregnant women
+    - What is the risk of infection in neonates
+
+- intent: faq/when_test
+  examples: |
+    - When should I be tested for COVID-19
+    - When to test for COVID
+    - When to go for COVID test
+
+- intent: faq/where_test
+  examples: |
+    - Where can I get tested
+    - How to get tested
+    - Where should we go for testing
+
+- intent: faq/other_allergy
+  examples: |
+    - Do persons suffering from pollen allergy or allergies in general have a higher risk to develop severe disease when having COVID-19
+    - Do persons suffering from pollen allergy have a higher risk to develop severe disease when having COVID
+    - Do persons suffering from allergies have a higher risk to develop severe disease when having COVID
+
+- intent: faq/other_allergy_vs_covid
+  examples: |
+    - How can we differentiate between hay fever/pollen allergy related respiratory symptoms and COVID-19 infection
+    - How can we differentiate between hay fever and COVID infection
+    - How can we differentiate between pollen allergy related respiratory symptoms and COVID infection
+    - differenence between pollen allergy and COVID infection
+    - differenence between hay fever and COVID infection
+    - differenence between respiratory symptoms and COVID infection
+    - differenence between hay pollen allergy related respiratory symptoms and COVID infection
+
+
+- intent: faq/allergy_treatment
+  examples: |
+    - Should people who suffer from pollen allergy self-isolate if they develop typical hay fever
+    - who suffer from pollen allergy self-isolate if hay fever
+    - pollen allergy self-isolate if hay fever symptoms
+
+- intent: faq/avoid_infection
+  examples: |
+    - How can I avoid getting infected
+    - avoid getting infected
+    - avoid infected
+
+- intent: faq/symptoms
+  examples: |
+    - What are the symptoms of COVID-19
+    - What are the symptoms of COVID
+    - symptoms of covid
+    - symptom of COVID
+    - symptoms of corona virus
+    - symptom of corona
+
+
+- intent: faq/virus_transmission
+  examples: |
+    - Can the virus that causes COVID-19 be transmitted through the air
+    - Can the virus that causes COVID be transmitted through the air
+    - is virus COVID transmitted through air
+    - is virus transmitted air
+
+- intent: faq/caught_from_non_symptom
+  examples: |
+    - Can CoVID-19 be caught from a person who has no symptoms
+    - Can CoVID caught from a person who has no symptoms
+    - Can CoVID caught from person having no symptoms
+    - Can CoVID spread from person with no symptoms
+    - is CoVID spread from person with no symptoms
+    - Corona spread from person with no symptoms
+    - Corona spread from asymptomatic person
+
+- intent: faq/caught_from_feces
+  examples: |
+    - Can I catch COVID-19 from the feces of someone with the disease
+    - Can someone catch COVID from the feces of someone
+    - catch COVID from the feces
+- intent: faq/protection_covid
+  examples: |
+    - What can I do to protect myself from corona virus
+    - protect from corona
+    - protection from corona
+
+- intent: faq/get_catch_covid
+  examples: |
+    - How likely am I to catch COVID-19
+    - How get COVID-19
+    - How get COVID
+    - catch COVID
+    - catch Corona
+
+- intent: faq/worry_covid
+  examples: |
+    - Should I worry about COVID-19
+    - Should I worry about COVID
+    - worry about COVID
+    - worry corona
+
+- intent: faq/risk_of_severe
+  examples: |
+    - Who is at risk of developing severe illness
+    - risk of developing severe illness from covid
+    - risk severe illness covid
+    - how covid affect people
+    - how covid affect
+
+
+- intent: faq/antibiotic_helpful
+  examples: |
+    - Are antibiotics effective in preventing or treating the COVID-19
+    - antibiotics effective in treating the COVID
+    - antibiotics effective in preventing COVID-19
+    - antibiotics helpful in COVID-19
+    - antibiotics helpful in corona
+    - antibiotics works COVID
+    - antibiotics work corona
+
+- intent: faq/medicine_helpful
+  examples: |
+    - Are there any medicines or therapies that can prevent or cure COVID-19 ?
+    - Are there any medicines to prevent or cure COVID
+    - any medicines to cure COVID
+    - any medicines to prevent COVID
+    - any medicines to prevent or cure corona
+
+
+- intent: faq/vaccine_covid
+  examples: |
+    - Is there a vaccine drug or treatment for COVID-19
+    - vaccine drug for COVID-19 or corona
+    - treatment for COVID-19 or corona
+    - vaccine for COVID-19 or corona
+
+- intent: faq/covid_vs_sar
+  examples: |
+    - Is COVID-19 the same as SARS
+    - COVID vs SARS
+    - COVID and SARS
+    - compare COVID and SARS
+    - differece between covid and sars
+    - differece between corona and sars
+
+- intent: faq/mask_protect
+  examples: |
+    - Should I wear mask to protect myself
+    - wear mask to protect from corona
+    - wear mask to protect from COVID
+    - is mask protect from COVID
+
+- intent: faq/handle_mask
+  examples: |
+    - How to put on use take off and dispose of a mask
+    - How to use mask
+    - How to handle mask
+    - How to take off mask
+    - How to dispose mask
+
+- intent: faq/infection_from_animal
+  examples: |
+    - Can humans become infected with the COVID-19 from an animal source
+    - Can humans get infected from an animal
+    - infected from animal
+    - infection from animal
+
+- intent: faq/infection_from_pet
+  examples: |
+    - Can I catch COVID-19 from my pet
+    - catch COVID from pet
+    - COVID from pet
+    - Can humans get infected from pet
+    - infected from pet cat dog
+    - infection from pet cat dog
+
+- intent: faq/survive_on_surface
+  examples: |
+    - How long does the virus survive on surfaces
+    - How long virus survive on surface
+    - virus survive on surfaces
+    - virus stay on surfaces
+    - corona virus stays on surfaces
+
+- intent: faq/package
+  examples: |
+    - Is it safe to receive a package from any area where COVID-19 has been reported?
+    - Is it safe to receive package from infected area
+    - can we receive package from infected area
+    - can we receive parcel from infected area
+
+- intent: faq/incubation_period
+  examples: |
+    - How long is the incubation period for corona virus
+    - incubation period for corona virus
+    - what is incubation period
